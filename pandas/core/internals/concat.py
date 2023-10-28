@@ -519,7 +519,7 @@ def _dtype_to_na_value(dtype: DtypeObj, has_none_blocks: bool):
             return None
         return np.nan
     elif dtype.kind == "O":
-        return np.nan
+        return None
     raise NotImplementedError
 
 
